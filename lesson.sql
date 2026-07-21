@@ -13,7 +13,7 @@ SELECT
 FROM
 	PatientStay ps
 WHERE
- ps.Hospital IN ( 'Oxleas', 'PRUH' )
+ ps.Hospital NOT IN ( 'Oxleas', 'PRUH' )
 	AND ps.AdmittedDate BETWEEN '2024-02-01' AND '2024-02-28'
 	AND ps.Ward LIKE '%Surgery'
 ORDER BY
